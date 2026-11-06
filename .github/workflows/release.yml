@@ -38,6 +38,6 @@ jobs:
             *) LATEST=false ;;
           esac
           gh release create "$TAG" --verify-tag --latest="$LATEST" \
-            --title "VoodooMaxAdapter ${VERSION}" \
+            --title "${VERSION}" \
             --notes "AppLovin MAX adapter ${VERSION}, for Voodoo Adn ${VERSION}."
           echo "✅ Release ${TAG} created (latest: ${LATEST})"
